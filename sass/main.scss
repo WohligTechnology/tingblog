@@ -10,7 +10,7 @@ $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
-$font-lw: 'Titillium Web', sans-serif;
+$font-lw: 'linowrite', sans-serif;
 @font-face {
     font-family: 'Linowrite';
     src: url("../fonts/linowrite.ttf");
@@ -30,6 +30,7 @@ body {
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
+  font-family: $font-lw;
   /*opacity: 0.3;*/
 }
 img.loading {
@@ -66,6 +67,89 @@ a {
   border-color: $brand-primary;
   outline: 0;
   @include box-shadow(none);
+}
+
+
+.blog{
+  .place{
+      background-color: black;
+          margin: 0px 300px;
+          color: white;
+          padding: 3px;
+          font-size: 18px;
+          font-family: $font-lw;
+  }
+  .fa{
+    color: #d8ba20;
+  }
+  .cir-head{
+    padding: 0px;
+margin-bottom: 15px;
+}
+  .cir-heads{
+    padding: 0px;
+    margin-top: 15px;
+margin-bottom: 15px;
+.blog-name{
+  float: left;
+  font-family: linowrite;
+  font-size: 24px;
+  font-weight: 500;
+      margin: 0 0 0 15px;
+      .fa-2{
+        font-size: 20px !important;
+      }
+}
+.blog-time{
+      margin: 0 0 0 19px;
+float: left;
+font-size: 12px;
+}
+  }
+
+  .circles{
+   width: 80px;
+   height: 80px;
+   border-radius:50%;
+  }
+  .blog-head{
+    font-family: $font-lw;
+
+    .head{
+      font-weight: 600 !important;
+      margin-bottom:0px;
+      margin-top: 52px;
+      padding-left: 24%;
+      font-size: 40px;
+      .fa-1{
+        font-size: 30px !important;
+      }
+    }
+    .subhead{
+      margin:0 0 52px;
+      padding-left: 62%;
+      font-weight: 600 !important;
+    }
+  }
+  .marbot{
+    margin-bottom: 15px;
+  }
+  .tag{
+    float: left;
+        margin-top: 10px;
+    font-weight: 500;
+  }
+  .tag-name{
+    span{
+      padding: 2px;
+      margin: 0 2px;
+      font-weight: 600;
+      border: 1px solid black;
+    }
+  }
+  .mb20{
+  margin: 0 45px 60px;
+  }
 }
 //bootstrap forms
 /* Start writing sass here */
