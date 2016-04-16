@@ -22,7 +22,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   //Used to name the .html file
 
   console.log("Testing Consoles");
-
+  $scope.currentDate = new Date().getTime();
   $scope.template = TemplateService.changecontent("blog");
   $scope.menutitle = NavigationService.makeactive("Blog");
   TemplateService.title = $scope.menutitle;

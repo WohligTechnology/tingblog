@@ -16,140 +16,163 @@ $font-lw: 'linowrite', sans-serif;
     src: url("../fonts/linowrite.ttf");
     font-weight: 400;
 }
-
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-// body {
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap"; // body {
 //   padding-top: 70px;
 // }
 body {
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  overflow-x: hidden;
-  font-family: $font-lw;
-  /*opacity: 0.3;*/
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    font-family: $font-lw;
+    /*opacity: 0.3;*/
 }
 img.loading {
-  text-align: center;
-  opacity: 1;
-  width: 32px !important;
-  height: auto;
+    text-align: center;
+    opacity: 1;
+    width: 32px !important;
+    height: auto;
 }
 img {
-  opacity: 0;
-  @include transition(all 300ms ease);
+    opacity: 0;
+    @include transition(all 300ms ease);
 }
 img.doneLoading {
-  opacity: 1;
+    opacity: 1;
 }
 nav li:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 a {
-  cursor: pointer;
-  @include transition(all ease 300ms);
+    cursor: pointer;
+    @include transition(all ease 300ms);
 }
 //bootstrap forms
-.input-lg,
+.btn,
+.form-control,
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
-.btn,
-.form-control {
-  border-radius: 0;
-  @include box-shadow(none);
+.input-lg {
+    border-radius: 0;
+    @include box-shadow(none);
 }
 .form-control:focus {
-  border-color: $brand-primary;
-  outline: 0;
-  @include box-shadow(none);
+    border-color: $brand-primary;
+    outline: 0;
+    @include box-shadow(none);
 }
-
-
-.blog{
-  .place{
-      background-color: black;
-          margin: 0px 300px;
-          color: white;
-          padding: 3px;
-          font-size: 18px;
-          font-family: $font-lw;
-  }
-  .fa{
-    color: #d8ba20;
-  }
-  .cir-head{
-    padding: 0px;
-margin-bottom: 15px;
-}
-  .cir-heads{
-    padding: 0px;
-    margin-top: 15px;
-margin-bottom: 15px;
-.blog-name{
-  float: left;
-  font-family: linowrite;
-  font-size: 24px;
-  font-weight: 500;
-      margin: 0 0 0 15px;
-      .fa-2{
-        font-size: 20px !important;
-      }
-}
-.blog-time{
-      margin: 0 0 0 19px;
-float: left;
-font-size: 12px;
-}
-  }
-
-  .circles{
-   width: 80px;
-   height: 80px;
-   border-radius:50%;
-  }
-  .blog-head{
-    font-family: $font-lw;
-
-    .head{
-      font-weight: 600 !important;
-      margin-bottom:0px;
-      margin-top: 52px;
-      padding-left: 24%;
-      font-size: 40px;
-      .fa-1{
-        font-size: 30px !important;
-      }
+.blog {
+    .inlblo {
+        display: inline-block;
     }
-    .subhead{
-      margin:0 0 52px;
-      padding-left: 62%;
-      font-weight: 600 !important;
+    .place {
+        background-color: black;
+        margin: 0 300px;
+        color: white;
+        padding: 3px;
+        font-size: 18px;
+        font-family: $font-lw;
+        span{
+          text-transform: lowercase;
+        }
     }
-  }
-  .marbot{
-    margin-bottom: 15px;
-  }
-  .tag{
-    float: left;
-        margin-top: 10px;
-    font-weight: 500;
-  }
-  .tag-name{
-    span{
-      padding: 2px;
-      margin: 0 2px;
-      font-weight: 600;
-      border: 1px solid black;
+    .fa {
+        color: #d8ba20;
     }
-  }
-  .mb20{
-  margin: 0 45px 60px;
-  }
+    .blog-head {
+        font-family: $font-lw;
+        .head {
+            font-weight: 600 !important;
+            margin: 65px 0 0;
+            padding-left: 24%;
+            font-size: 40px;
+            .fa-1 {
+                font-size: 30px !important;
+            }
+        }
+        .subhead {
+            margin: 0 0 65px;
+            padding-left: 62%;
+            font-weight: 600 !important;
+        }
+    }
+    .blog-detail {
+        margin: 0 auto;
+        .mb60 {
+            margin: 0 0 20px;
+            min-height: 524px;
+            .mb20 {
+                margin-bottom: 10px;
+                .circles {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+                .cir-heads {
+                    // padding: 0px;
+                    // margin-top: 15px;
+                    // margin-bottom: 15px;
+                    padding-left: 10px;
+                    .blog-name {
+                        float: left;
+                        font-family: linowrite;
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin: 0;
+                        .fa-2 {
+                            font-size: 20px !important;
+                        }
+                    }
+                  }
+                    .cir-head{
+                      padding-left: 12px;
+                    .blog-time {
+                        margin: 0;
+                        float: left;
+                        font-weight: 400;
+                        font-size: 11px;
+                    }
+                }
+            }
+            p {
+                text-align: justify;
+                margin: 0 0 20px;
+                font-weight: 600;
+            }
+            .marbot {
+                margin-bottom: 15px;
+            }
+            .tag {
+                font-weight: 500;
+                margin-bottom: 5px;
+                h3 {
+                    margin: 0;
+                }
+            }
+            .tag-name {
+                ul {
+                    display: block;
+                    padding: 0;
+                }
+                li {
+                    display: inline-block;
+                    padding: 0 5px 5px 0;
+                    a {
+                        padding: 0 2px;
+                        border: 1px solid #000;
+                        color: black;
+                        font-weight: 600;
+                    }
+                }
+                a {}
+            }
+        }
+    }
 }
 //bootstrap forms
 /* Start writing sass here */
