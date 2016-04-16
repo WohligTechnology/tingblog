@@ -1,6 +1,6 @@
 {
   "name": "Tingblog",
-  "description": "Angular Framework Frontend",
+  "description": "Tingblog",
   "main": "gulpfile.js",
   "authors": [
     "chintan@wohlig.com"
