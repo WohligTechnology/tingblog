@@ -30,6 +30,9 @@
   }
 }
 @media (max-width: $screen-xs-max) {
+  .mb60 {
+    height:auto !important;
+  }
   .blog{
     .place {
       margin: 0px 30px;
