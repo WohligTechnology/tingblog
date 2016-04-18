@@ -162,18 +162,13 @@ a {
         }
         .marbot {
             margin-bottom: 15px;
-            overflow: hidden;
-            height: 200px;
-            display: flex;
-            align-items: center;
+
             img {
-                max-width: 100%;
-                max-height: 100%;
-                margin: 0 auto;
+                width:100%;
             }
         }
         .tagging {
-            max-height: 120px;
+            max-height: 100px;
             overflow: hidden;
             .tag {
                 // font-weight: 500;
