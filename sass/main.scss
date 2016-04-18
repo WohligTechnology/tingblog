@@ -3,7 +3,7 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 @import "../bower_components/flexslider/flexslider.css";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
-@import "../bower_components/fancyBox/source/jquery.fancybox.css"; 
+@import "../bower_components/fancyBox/source/jquery.fancybox.css";
 /* Bootstrap Variables Goes Here */
 $brand-primary: #0d9dff !default;
 $brand-success: #84ce3c !default;
@@ -20,7 +20,7 @@ $font-lw: 'linowrite', sans-serif;
 //   padding-top: 70px;
 // }
 body {
-    background-image: url("../img/background.png");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -87,8 +87,8 @@ a {
     .blog-head {
         font-family: $font-lw;
         .head {
-            font-weight: 600 !important;
-            margin: 65px 0 0;
+            // font-weight: 600 !important;
+            margin: 45px 0 0;
             padding-left: 24%;
             font-size: 40px;
             .fa-1 {
@@ -96,19 +96,19 @@ a {
             }
         }
         .subhead {
-            margin: 0 0 65px;
+            margin: 0 0 45px;
             padding-left: 62%;
-            font-weight: 600 !important;
+            // font-weight: 600 !important;
         }
     }
-    .blog-detail {
-        margin: 0 auto;
         .mb60 {
             margin: 0 0 20px;
-            min-height: 524px;
+            height: 530px;
             .mb20 {
                 margin-bottom: 10px;
                 .circles {
+                  background-repeat: no-repeat;
+                   background-size: cover;
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
@@ -122,7 +122,7 @@ a {
                         float: left;
                         font-family: linowrite;
                         font-size: 24px;
-                        font-weight: 500;
+                      //   font-weight: 500;
                         margin: 0;
                         .fa-2 {
                             font-size: 20px !important;
@@ -134,45 +134,65 @@ a {
                     .blog-time {
                         margin: 0;
                         float: left;
-                        font-weight: 400;
+                        // font-weight: 400;
                         font-size: 11px;
                     }
                 }
             }
-            p {
-                text-align: justify;
-                margin: 0 0 20px;
-                font-weight: 600;
-            }
+          .para{
+            max-height:95px;
+            overflow:hidden;
+              margin: 0 0 15px;
+             p {
+            text-align: justify;
+            margin:0;
+            // font-weight: 600;
+          }
+        }
             .marbot {
                 margin-bottom: 15px;
-            }
-            .tag {
-                font-weight: 500;
-                margin-bottom: 5px;
-                h3 {
-                    margin: 0;
+                overflow: hidden;
+                height:200px;
+                display: flex;
+                align-items: center;
+                img{
+                  max-width: 100%;
+                  max-height: 100%;
+                  margin:0 auto;
                 }
             }
-            .tag-name {
-                ul {
-                    display: block;
-                    padding: 0;
-                }
-                li {
-                    display: inline-block;
-                    padding: 0 5px 5px 0;
-                    a {
-                        padding: 0 2px;
-                        border: 1px solid #000;
-                        color: black;
-                        font-weight: 600;
+            .tagging{
+              max-height:95px;
+              overflow:hidden;
+              .tag {
+                  // font-weight: 500;
+                  margin-bottom: 15px;
+                  h3 {
+                      margin: 0;
+                  }
+              }
+              .tag-name {
+                margin-right: 2.5em;
+                  ul {
+                      display: block;
+                      padding: 0;
+                  }
+                  li {
+                      display: inline-block;
+                      // padding: 0 5px 5px 0;
+                      margin-right: 0.5em;
+                          margin-bottom: 1em;
+                      a {
+                          padding: 4px 4px;
+                          border: 1px solid #000;
+                          color: black;
+                          // font-weight: 600;
+                      }
+                  }
+              }
+
+            }
                     }
-                }
-                a {}
-            }
-        }
-    }
 }
 //bootstrap forms
 /* Start writing sass here */
