@@ -14,6 +14,9 @@
 }
 }
 @media (max-width: $screen-sm-max){
+  .mb60 {
+    height:465px !important;
+  }
   .blog{
     .place {
       margin: 0 95px;
