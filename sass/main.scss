@@ -12,42 +12,42 @@ $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 $font-lw: 'Linowrite', sans-serif;
 @font-face {
-    font-family: 'Linowrite';
-    src: url("../fonts/linowrite.ttf");
-    font-weight: 400;
+  font-family: 'Linowrite';
+  src: url("../fonts/linowrite.ttf");
+  font-weight: 400;
 }
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap"; // body {
 //   padding-top: 70px;
 // }
 body {
-    background-image: url("../img/background.jpg");
-    background-repeat: repeat-y;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-size: 100% auto;
-    overflow-x: hidden;
-    font-family: $font-lw;
+  background-image: url("../img/background.jpg");
+  background-repeat: repeat-y;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: 100% auto;
+  overflow-x: hidden;
+  font-family: $font-lw;
 }
 img.loading {
-    text-align: center;
-    opacity: 1;
-    width: 32px !important;
-    height: auto;
+  text-align: center;
+  opacity: 1;
+  width: 32px !important;
+  height: auto;
 }
 img {
-    opacity: 0;
-    @include transition(all 300ms ease);
+  opacity: 0;
+  @include transition(all 300ms ease);
 }
 img.doneLoading {
-    opacity: 1;
+  opacity: 1;
 }
 nav li:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 a {
-    cursor: pointer;
-    @include transition(all ease 300ms);
+  cursor: pointer;
+  @include transition(all ease 300ms);
 }
 //bootstrap forms
 .btn,
@@ -56,147 +56,152 @@ a {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .input-lg {
-    border-radius: 0;
-    @include box-shadow(none);
+  border-radius: 0;
+  @include box-shadow(none);
 }
 .form-control:focus {
-    border-color: $brand-primary;
-    outline: 0;
-    @include box-shadow(none);
+  border-color: $brand-primary;
+  outline: 0;
+  @include box-shadow(none);
 }
 .blog {
-    .inlblo {
-        display: inline-block;
+  .inlblo {
+    display: inline-block;
+  }
+  .place {
+    background-color: black;
+    margin: 0 300px;
+    color: white;
+    padding: 3px;
+    font-size: 18px;
+    font-family: $font-lw;
+    span {
+      text-transform: lowercase;
     }
-    .place {
-        background-color: black;
-        margin: 0 300px;
-        color: white;
-        padding: 3px;
-        font-size: 18px;
-        font-family: $font-lw;
-        span {
-            text-transform: lowercase;
-        }
+  }
+  .fa {
+    color: $brand-warning;
+  }
+  .blog-head {
+    font-family: $font-lw;
+    .head {
+      // font-weight: 600 !important;
+      margin: 45px 0 0;
+      padding-left: 24%;
+      font-size: 40px;
+      .fa-1 {
+        font-size: 30px !important;
+      }
     }
-    .fa {
-        color: $brand-warning;
+    .subhead {
+      margin: 0 0 45px;
+      padding-left: 62%;
+      // font-weight: 600 !important;
     }
-    .blog-head {
-        font-family: $font-lw;
-        .head {
-            // font-weight: 600 !important;
-            margin: 45px 0 0;
-            padding-left: 24%;
-            font-size: 40px;
-            .fa-1 {
-                font-size: 30px !important;
-            }
-        }
-        .subhead {
-            margin: 0 0 45px;
-            padding-left: 62%;
-            // font-weight: 600 !important;
-        }
+  }
+  .mb60 {
+    margin: 0 0 20px;
+    height: 530px;
+    position: relative;
+    img.loading {
+      width: 70px !important;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: white;
+      padding: 15px;
+      border-radius: 2px;
+      @include transform(translate(-50%,-50%));
     }
-    .mb60 {
-        margin: 0 0 20px;
-        height: 530px;
-        position: relative;
-
-        img.loading {
-          width: 70px !important;
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          background: white;
-          padding: 15px;
-          border-radius: 2px;
-          @include transform(translate(-50%,-50%));
+    .mb20 {
+      margin-bottom: 10px;
+      .circles {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      .cir-heads {
+        // padding: 0px;
+        // margin-top: 15px;
+        // margin-bottom: 15px;
+        padding-left: 10px;
+        .blog-name {
+          float: left;
+          font-family: linowrite;
+          font-size: 24px;
+          //   font-weight: 500;
+          margin: 0;
+          .fa-2 {
+            font-size: 20px !important;
+          }
         }
-
-        .mb20 {
-            margin-bottom: 10px;
-            .circles {
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-            }
-            .cir-heads {
-                // padding: 0px;
-                // margin-top: 15px;
-                // margin-bottom: 15px;
-                padding-left: 10px;
-                .blog-name {
-                    float: left;
-                    font-family: linowrite;
-                    font-size: 24px;
-                    //   font-weight: 500;
-                    margin: 0;
-                    .fa-2 {
-                        font-size: 20px !important;
-                    }
-                }
-            }
-            .cir-head {
-                padding-left: 12px;
-                .blog-time {
-                    margin: 0;
-                    float: left;
-                    // font-weight: 400;
-                    font-size: 11px;
-                }
-            }
+      }
+      .cir-head {
+        padding-left: 12px;
+        .blog-time {
+          margin: 0;
+          float: left;
+          // font-weight: 400;
+          font-size: 11px;
         }
-        .para {
-            max-height: 95px;
-            overflow: hidden;
-            margin: 0 0 15px;
-            p {
-                text-align: justify;
-                margin: 0;
-                // font-weight: 600;
-            }
-        }
-        .marbot {
-            margin-bottom: 15px;
-
-            img {
-                width:100%;
-            }
-        }
-        .tagging {
-            max-height: 100px;
-            overflow: hidden;
-            .tag {
-                // font-weight: 500;
-                margin-bottom: 5px;
-                h3 {
-                    margin: 0;
-                }
-            }
-            .tag-name {
-                ul {
-                    display: block;
-                    padding: 0;
-                }
-                li {
-                    display: inline-block;
-                    // padding: 0 5px 5px 0;
-                    margin: 2.5px;
-                    a {
-                        padding: 4px;
-                        border: 1px solid black;
-                        color: black;
-                        display: inline-block;
-                        // font-weight: 600;
-                    }
-                }
-            }
-        }
+      }
     }
+    .para {
+      max-height: 95px;
+      overflow: hidden;
+      margin: 0 0 15px;
+      p {
+        text-align: justify;
+        margin: 0;
+        // font-weight: 600;
+      }
+    }
+    .marbot {
+      margin-bottom: 15px;
+      position: relative;
+      .playbutton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 4em;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .tagging {
+      max-height: 100px;
+      overflow: hidden;
+      .tag {
+        // font-weight: 500;
+        margin-bottom: 5px;
+        h3 {
+          margin: 0;
+        }
+      }
+      .tag-name {
+        ul {
+          display: block;
+          padding: 0;
+        }
+        li {
+          display: inline-block;
+          // padding: 0 5px 5px 0;
+          margin: 2.5px;
+          a {
+            padding: 4px;
+            border: 1px solid black;
+            color: black;
+            display: inline-block;
+            // font-weight: 600;
+          }
+        }
+      }
+    }
+  }
 }
 //bootstrap forms
 /* Start writing sass here */
