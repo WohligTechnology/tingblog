@@ -40,6 +40,20 @@ firstapp.directive('img', function($compile, $parse) {
   };
 });
 
+  $(document).ready(function() {
+    $(".fancybox").fancybox({
+      maxWidth: 800,
+      maxHeight: 600,
+      fitToView: true,
+      width: 800,
+      height: 600,
+      autoSize: true,
+      closeClick: false,
+      openEffect: 'none',
+      closeEffect: 'none'
+    });
+  });
+
 firstapp.directive('fancyboxBox', function($document) {
     return {
         restrict: 'EA',
