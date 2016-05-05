@@ -43,7 +43,7 @@ firstapp.directive('img', function($compile, $parse) {
 firstapp.directive('fancyboxBox', function($document) {
     return {
         restrict: 'EA',
-        replace: true,
+        replace: false,
         link: function(scope, element, attr) {
             var $element = $(element);
             var target;
