@@ -40,24 +40,10 @@ firstapp.directive('img', function($compile, $parse) {
   };
 });
 
-  $(document).ready(function() {
-    $(".fancybox").fancybox({
-      maxWidth: 800,
-      maxHeight: 600,
-      fitToView: true,
-      width: 800,
-      height: 600,
-      autoSize: true,
-      closeClick: false,
-      openEffect: 'none',
-      closeEffect: 'none'
-    });
-  });
-
 firstapp.directive('fancyboxBox', function($document) {
     return {
         restrict: 'EA',
-        replace: false,
+        replace: true,
         link: function(scope, element, attr) {
             var $element = $(element);
             var target;
@@ -68,12 +54,21 @@ firstapp.directive('fancyboxBox', function($document) {
             }
 
             target.fancybox({
-                openEffect: 'fade',
-                closeEffect: 'fade',
-                closeBtn: true,
-                helpers: {
-                    media: {}
+              openEffect: 'fade',
+              closeEffect: 'fade',
+              prevEffect: 'none',
+              nextEffect: 'none',
+              closeBtn: true,
+              helpers: {
+                media: {},
+                title: {
+                  type: 'inside'
+                },
+                thumbs: {
+                  width: 50,
+                  height: 50
                 }
+              }
             });
         }
     };
